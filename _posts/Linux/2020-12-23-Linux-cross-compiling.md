@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Linux] Cross Compiling"
-categories: [Linux]
+categories: [Linux, Troubleshooting]
 tags: [linux]
 ---
 
