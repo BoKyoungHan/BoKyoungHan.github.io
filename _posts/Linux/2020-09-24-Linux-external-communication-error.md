@@ -10,7 +10,7 @@ tags: [linux]
 재부팅 후에 git repository를 clone해서 가져오려고 시도하였는데 다음과 같은 오류가 발생했다.
 
 ```console
-bkhan@jsshim-desktop:~$ **git clone https://github.com/ithemal/bhive.git**
+bkhan@jsshim-desktop:~$ git clone https://github.com/ithemal/bhive.git
 Cloning into 'bhive'...
 fatal: unable to access 'https://github.com/ithemal/bhive.git/': Could not resolve host: github.com
 ```
@@ -22,16 +22,16 @@ $ git config --global --unset http.proxy
 $ git config --global --unset https.proxy
 ```
 
-그러다 동기가 문제를 해결하는 방법을 찾아냈고, 이에 대해 정리해보기로 하였다.
+그러다 문제를 해결하는 방법을 찾아냈고, 이에 대해 정리해보기로 하였다.
 
 <br><br>
 ## Troubleshooting
 #### ✔️ 네트워크 외부 통신 상태 확인
 
-우선 **ping** 으로 외부 통신이 가능한지 확인한다.
+우선 `ping` 으로 외부 통신이 가능한지 확인한다.
 
 ```console
-bkhan@jsshim-desktop:~$ **ping 8.8.8.8**
+bkhan@jsshim-desktop:~$ ping 8.8.8.8
 PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=45.7 ms
 64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=45.8 ms
@@ -45,7 +45,7 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 네트워크 준비가 완료된 것을 확인한 후 도메인을 통한 통신을 시도해 보았다.
 
 ```console
-bkhan@jsshim-desktop:~$ **ping www.google.com**
+bkhan@jsshim-desktop:~$ ping www.google.com
 ping: www.google.com: Name or service not known
 ```
 
@@ -58,21 +58,21 @@ ping: www.google.com: Name or service not known
 #### ✔️ DNS 서버 추가
 DNS 서버를 추가해주자. 참고한 블로그에서는 KT의 공인된 수퍼 DNS 서버를 이용하였고, 나도 동일한 DNS 서버를 사용하였다.
 
-편집기로 **/etc/resolv.conf** 파일을 열어 **nameserver 168.126.63.1** 을 추가해준다.
+편집기로 `/etc/resolv.conf` 파일을 열어 `nameserver 168.126.63.1` 을 추가해준다.
 이 작업은 문자열을 입력할 시 168.126.63.1 서버에 저장된 DNS ZONE 정보의 내용을 참조하겠다는 것을 의미한다.
 
 ```python
 nameserver 127.0.0.53
-**nameserver 168.126.63.1**
+nameserver 168.126.63.1
 options edns0
 ```
 
-추가 작업이 끝난 후 파일을 저장하고 다시 **ping www.google.com** 명령어를 실행시켜 정상적으로 작동하는지 확인을 해보았다.
+추가 작업이 끝난 후 파일을 저장하고 다시 `ping www.google.com` 명령어를 실행시켜 정상적으로 작동하는지 확인을 해보았다.
 
 #### ✔️ 결과 확인
 
 ```console
-bkhan@jsshim-desktop:~$ **ping www.google.com**
+bkhan@jsshim-desktop:~$ ping www.google.com
 PING www.google.com (172.217.25.228) 56(84) bytes of data.
 64 bytes from nrt12s14-in-f4.1e100.net (172.217.25.228): icmp_seq=1 ttl=114 time=36.7 ms
 64 bytes from nrt12s14-in-f4.1e100.net (172.217.25.228): icmp_seq=2 ttl=114 time=38.1 ms
