@@ -2,8 +2,7 @@
 layout: post
 title: "[Linux] find 명령어"
 categories: [Linux]
-tags: [command]
-
+tags: [linux, command]
 ---
 
 ## find
