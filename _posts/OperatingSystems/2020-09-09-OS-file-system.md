@@ -4,7 +4,7 @@ title: "[Operating Systems] File System"
 categories: [OperatingSystems]
 tags: [os, fs]
 ---
-i
+
 ## Intro
 ---
 이번 포스팅에서는 UNIX의 중요한 역할 중 하나인 파일 시스템의 의미와 종류 및 구성요소에 관해 정리해보려고 한다.
