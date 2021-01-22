@@ -4,7 +4,7 @@
 
 
 #### 참고 사항
-* 글 포스팅 후 Category, Tags, Archives 적용을 위해 터미널에서 `bash tools/publish.sh` 실행하여 오토 머지 필요함 !
+* 글 포스팅 후 Category, Tags, Archives 적용을 위해 터미널에서 `bash tools/publish.sh` 실행하여 오토 머지 필요함
   * jekyll **Chirpy** 테마
 * Local에서 지킬 적용 사항 확인하기 위한 Bundler, Ruby 설치
 ```command
