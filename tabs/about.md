@@ -30,14 +30,6 @@ Seoul National University **(SNU)**
 	- Research to Advaned SW Reliability, Security & Safety [(ARISE)](http://arise.handong.edu)
 	- Advisor: Prof. Shin Hong  
 
-## Personal History
-- Grand Prize, KISA, Oct 2018
-   - KISA (한국인터넷진흥원) 주최 제 5회 ‘소프트웨어(SW)개발보안 경진대회’ 최수우상 (행정안전부장관상) 수상
-- Capstone Project, Jan 2018 - Oct 2019
-   - PHP 보안 약점 정적 분석기 도구 개발
-- CSTS (Certified Software Test Specialist), TTA, Sep 2018
-   - Acquisition of "CSTS SW Test Expert Certificate, Foundation Level" hosted by TTA
-
 ## Contact
 - Email: bkhan@davinci.snu.ac.kr
 - Git: https://github.com/BoKyoungHan
