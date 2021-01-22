@@ -15,15 +15,24 @@ tags: [linux]
 
 ## 설치하기
 먼저 `ctags` 를 설치한다.
-> $ sudo apt-get install ctags
+
+```console
+$ sudo apt-get install ctags
+```
 
 태그를 만들고자 하는 프로젝트의 가장 상위 디렉토리에서 아래 명령어를 실행시킨다.
-> $ ctags -R .
+
+```console
+$ ctags -R .
+```
 
 위 명령어를 수행하면 '현재 directory의 모든 파일 + 하위 디렉토리의 모든 파일' 에 대한 태그가 생성된다.
 
 현재 디렉토리 내에서만 태그를 만들고 싶을 경우엔 아래 명령어를 입력하면 된다.
-> $ ctags -R *
+
+```console
+$ ctags -R *
+```
 
 `ctags`엔 이보다 많은 옵션이 있는데 `$ ctags --help` 명령어를 통해 확인할 수 있다.
 
