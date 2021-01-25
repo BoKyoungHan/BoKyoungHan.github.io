@@ -2,7 +2,7 @@
 layout: post
 title: "[Linux] 외부 통신 오류"
 categories: [Linux, Troubleshooting]
-tags: [linux]
+tags: [linux, troubleshooting]
 ---
 
 ## Intro
