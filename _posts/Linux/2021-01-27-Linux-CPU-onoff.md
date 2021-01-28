@@ -13,6 +13,7 @@ tags: [linux]
 
 _서버의 16개 코어 중 하나의 코를 통해 실험을 돌린 뒤 그 결과를 추출하기 위해 이 기능을 사용해 보려고 한다._ 
 
+<br><br>
 
 
 ## 서버의 CPU 정보 확인하기
@@ -65,7 +66,7 @@ power management:
 * core id: 물리 CPU내에서 각 core에 할당되는 ID
 
 
-
+<br><br>
 
 
 ## CPU ON/OFF 설정
@@ -88,10 +89,10 @@ echo 1 > /sys/devices/system/cpu/cpu<processor id>/online
 echo 0 > /sys/devices/system/cpu/cpu<processor id>/online
 ```
 
-
+<br>
 
 **참고로 CPU0번은 위와 같이 같은 방법으로 제어할 수 없다.** 
-즉, `/sys/devices/system/cpu/cpu0/online` 파일이 존재하지 않는다.
+<br>즉, `/sys/devices/system/cpu/cpu0/online` 파일이 존재하지 않는다.
 
 
 
