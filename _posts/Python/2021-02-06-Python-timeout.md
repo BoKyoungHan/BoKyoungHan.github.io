@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[python] subprocess 모듈 timeout 사용하기"
+title: "[Python] subprocess 모듈 timeout 사용하기"
 categories: [Python, Troubleshooting]
 tags: [python, troubleshooting]
 
